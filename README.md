@@ -10,7 +10,7 @@ Under the hood we use _Spring-@Async_ to deal with long running processes. To in
 But the main focus lies on how to deal with these models which will be explained further down.
 
 ## Starting and running the application
-After checking out, import it into the IDE of your liking. As it is based on the Wicket Maven Archetype, you will find __com.senacor.wicket.async.christmas.Start__ in the test-folder. You could run Start directly or use _mvn jetty:run_ to fire it up. Teh application is running in development mode by default, so there won't be any outgoing traffic. If you are feeling adventurous you could switch to _production_-mode by providing __-Dspring.profiles.active="prod"__ as a jre parameter.
+After checking out, import it into the IDE of your liking. As it is based on the Wicket Maven Archetype, you will find __com.senacor.wicket.async.christmas.Start__ in the test-folder. Use _mvn jetty:run_ to run the application or you could run Start directly if your IDE supports aspectj. The application uses aspectj for the spring integration, so you need the aspectj-support in your IDE (aspectj-tools, if your are using eclipse). The application is running in development mode by default, so there won't be any outgoing traffic. If you are feeling adventurous you could switch to _production_-mode by providing __-Dspring.profiles.active="prod"__ as a jre parameter.
 Now go to [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
 ## The application
